@@ -24,6 +24,13 @@ header .logo {
     font-weight: 700;
     color: #00ff90;
 }
+a:link {
+    color: var(--text-color);
+}
+a:visited {
+    color: var(--primary-color);
+    outline: none;
+}
 a {
     color: var(--text-color);
     text-decoration: none;
