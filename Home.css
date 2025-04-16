@@ -99,8 +99,9 @@ h1, h2 {
 
 #about {
     margin-top: 5%;
-    background-color: rgb(45, 45, 45);
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 footer {

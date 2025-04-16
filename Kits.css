@@ -24,6 +24,60 @@ header .logo {
     font-weight: 700;
     color: #00ff90;
 }
+
+#t1, #t2, #t3, #t4 {
+    font-size: 200%;
+}
+
+#t1 {
+    animation: colorChange1 s steps(1) infinite;
+}
+
+#t2 {
+    animation: colorChange2 5s steps(1) infinite;
+}
+
+#t3 {
+    animation: colorChange3 5s steps(1) infinite;
+}
+
+#t4 {
+    animation: colorChange4 5s steps(1) infinite;
+}
+
+@keyframes colorChange1 {
+    0% { color: white; font-size: 200%; }
+    25% { color: red; font-size: 250%; }
+    50% { color: white; font-size: 200%; }
+    75% { color: white; font-size: 200%; }
+    100% { color: white; font-size: 200%; }
+}
+
+@keyframes colorChange2 {
+    0% { color: white; font-size: 200%; }
+    25% { color: white; font-size: 200%; }
+    50% { color: turquoise; font-size: 250%; }
+    75% { color: white; font-size: 200%; }
+    100% { color: white; font-size: 200%; }
+}
+
+@keyframes colorChange3 {
+    0% { color: white; font-size: 200%; }
+    25% { color: white; font-size: 200%; }
+    50% { color: white; font-size: 200%; }
+    75% { color: royalblue; font-size: 250%; }
+    100% { color: white; font-size: 200%; }
+}
+
+@keyframes colorChange4 {
+    0% { color: white; font-size: 200%; }
+    25% { color: white; font-size: 200%; }
+    50% { color: white; font-size: 200%; }
+    75% { color: white; font-size: 200%; }
+    100% { color: goldenrod; font-size: 250%; }
+}
+
+
 a:link {
     color: var(--text-color);
 }

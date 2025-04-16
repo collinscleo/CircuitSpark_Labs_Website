@@ -4,9 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Product {
+    static String productName = "REPLACE WITH PRODUCT NAME";
     public static void main(String[] args) {
         try {
-            File myObj = new File("ProductName.html");
+            File myObj = new File((productName+".html"));
             if (myObj.createNewFile()) {
                 System.out.println("File created: " + myObj.getName());
             } else {
@@ -18,7 +19,7 @@ public class Product {
         }
 
         try {
-            FileWriter myWriter = new FileWriter("ProductName.html");
+            FileWriter myWriter = new FileWriter((productName+".html"));
             myWriter.write("<!DOCTYPE html>\r\n" + //
                                 "<html lang=\"en\">\r\n" + //
                                 "<head>\r\n" + //
