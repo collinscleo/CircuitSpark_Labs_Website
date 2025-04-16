@@ -95,29 +95,12 @@ h1, h2 {
     transform: translateY(-10px);
 }
 
-form input, form textarea {
+#video {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background-color: #121212;
-    color: #f4f4f4;
-}
-
-form button {
-    background-color: #00ff90;
-    color: #121212;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-form button:hover {
-    background-color: #00cc73;
-    transform: scale(1.05);
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin: auto;
 }
 
 footer {
