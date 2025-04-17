@@ -30,7 +30,6 @@ a {
 }
 a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
 }
 header nav ul {
     display: flex;

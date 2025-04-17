@@ -50,6 +50,92 @@ header nav a:hover {
     color: #00ff90;
 }
 
+#inspiration {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 200%; /* Set the base font size for the paragraph */
+    height: 100vh; /* Make the paragraph take the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+#t1, #t2, #t3, #t4 {
+    display: inline-block; /* Ensure spans are treated as block elements for spacing */
+    margin-right: 10px; /* Add space between spans */
+    font-family: 'Roboto', sans-serif;
+}
+
+#t1 {
+    animation: colorChange1 5s steps(1) infinite; /* 5 seconds duration */
+}
+
+#t2 {
+    animation: colorChange2 5s steps(1) infinite; /* 5 seconds duration */
+}
+
+#t3 {
+    animation: colorChange3 5s steps(1) infinite; /* 5 seconds duration */
+}
+
+#t4 {
+    animation: colorChange4 5s steps(1) infinite; /* 5 seconds duration */
+}
+
+@keyframes colorChange1 {
+    0% { color: white; font-size: 200%; }
+    25% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
+    50% { color: white; font-size: 200%; transform: translateY(10px); }
+    75% { color: white; font-size: 200%; }
+    100% { color: white; font-size: 200%; }
+}
+
+@keyframes colorChange2 {
+    0% { color: white; font-size: 200%; }
+    25% { color: white; font-size: 200%; }
+    50% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
+    75% { color: white; font-size: 200%; transform: translateY(10px); }
+    100% { color: white; font-size: 200%; }
+}
+
+@keyframes colorChange3 {
+    0% { color: white; font-size: 200%; }
+    25% { color: white; font-size: 200%; }
+    50% { color: white; font-size: 200%; }
+    75% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
+    100% { color: white; font-size: 200%; transform: translateY(10px); }
+}
+
+@keyframes colorChange4 {
+    0% { color: white; font-size: 200%; }
+    25% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
+    50% { color: white; font-size: 200%; transform: translateY(10px); }
+    75% { color: white; font-size: 200%; }
+    100% { color: white; font-size: 200%; }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 main {
     padding: 40px 20px;
 }
@@ -74,12 +160,16 @@ h1, h2 {
     transform: scale(1.05);
 }
 
+.kits {
+    margin-top: 3%;
+}
+
 .kits-container {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .kit-card {
@@ -105,8 +195,41 @@ h1, h2 {
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
-    margin-top: 40px;
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+}
+
+#footerHeaders {
+    margin-bottom: 20px; /* Space below the legal text */
+    text-align: center; /* Center the legal text */
+}
+
+.footerContent {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out sections evenly */
+}
+
+.footerHeader {
+    font-size: 1.2em; /* Larger font for headers */
+    margin: 10px 0; /* Margin above and below headers */
+}
+
+.footerLinks {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footerLinks li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footerLinks a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footerLinks a:hover {
+    color: #00ff90; /* Change color on hover */
 }
