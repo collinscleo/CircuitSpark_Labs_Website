@@ -50,23 +50,62 @@ header nav a:hover {
     color: #00ff90;
 }
 
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 25%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    align-items: center;
+}
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+    
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
 #inspiration {
     display: flex; /* Use Flexbox for alignment */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    font-size: 200%; /* Set the base font size for the paragraph */
+    font-size: 100%; /* Set the base font size for the paragraph */
     height: 100vh; /* Make the paragraph take the full height of the viewport */
     margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 #t1, #t2, #t3, #t4 {
     display: inline-block; /* Ensure spans are treated as block elements for spacing */
-    margin-right: 10px; /* Add space between spans */
+    display: absolute;
+    margin-left: 2%; /* Add space between spans */
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 #t1 {
     animation: colorChange1 5s steps(1) infinite; /* 5 seconds duration */
+    margin-left: 42.5%; /* THIS IS JUST TEMPORARY PLEASE FIX!!!!!*/
 }
 
 #t2 {
@@ -103,14 +142,6 @@ header nav a:hover {
     50% { color: white; font-size: 200%; }
     75% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
     100% { color: white; font-size: 200%; transform: translateY(10px); }
-}
-
-@keyframes colorChange4 {
-    0% { color: white; font-size: 200%; }
-    25% { color: #00ff90; font-size: 250%; transform: translateY(-10px); }
-    50% { color: white; font-size: 200%; transform: translateY(10px); }
-    75% { color: white; font-size: 200%; }
-    100% { color: white; font-size: 200%; }
 }
 
 .video-container {

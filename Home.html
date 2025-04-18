@@ -12,6 +12,15 @@
     <body>
         <header>
             <div class="logo">CircuitSpark Crates</div>
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search..">
+            
+            <ul id="myUL">
+                <li style="display:none;"><a href="#">Build your own clock kit</a></li>
+                <li><a href="#">Weather Watch addon for the clock kit</a></li>
+                <li><a href="#">Temperature Tracker addon for the clock kit</a></li>
+                <li><a href="#">Alarm addon for the clock kit</a></li>
+            </ul>
+            
             <nav>
                 <ul>
                     <li><a href="Home.html">Home</a></li>
@@ -21,20 +30,17 @@
                     <li><a href="cart.html">Cart</a></li>
                 </ul>
             </nav>
-        </header>
+        </header>        
 
         <main>
             <section id="home">
                 <h1 class="Headers">CircuitSpark Crates</h1>
 
-                <div id="inspiration">
                     <p>
                         <span id="t1">Build</span>
                         <span id="t2">Learn</span>
                         <span id="t3">Innovate</span>
-                        <span id="t4">Create</span> <!-- Added t4 for completeness -->
-                    </p>
-                </div>                
+                    </p>               
                 
                 <div class="video-container">
                     <video width="100%" height="auto" autoplay loop muted id="myVideo">
