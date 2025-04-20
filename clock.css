@@ -24,13 +24,16 @@ header .logo {
     font-weight: 700;
     color: #00ff90;
 }
+
 a {
     color: var(--text-color);
     text-decoration: none;
 }
+
 a:hover {
     color: var(--primary-color);
 }
+
 header nav ul {
     display: flex;
     gap: 20px;
@@ -51,70 +54,53 @@ main {
     padding: 40px 20px;
 }
 
-h1, h2 {
+.titlecard {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kit-image {
+    width: 50%; /* Adjust width as needed */
+    height: auto;
+}
+
+.description {
+    width: 50%; /* Adjust width as needed */
+    margin-left: 3%;
+}
+
+h1, h2 {
     color: #fff;
 }
 
-.cta-btn {
+.features ul {
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.features li {
+    margin: 5px 0;
+}
+
+.purchase {
+    display: inline-block;
     background-color: #00ff90;
     color: #121212;
-    border: none;
     padding: 15px 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #00cc73;
-    transform: scale(1.05);
-}
-
-.kits-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.kit-card {
-    background-color: #1c1c1c;
-    font-family: 'Roboto', sans-serif;
-    color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.kit-card:hover {
-    transform: translateY(-10px);
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background-color: #121212;
-    color: #f4f4f4;
-}
-
-form button {
-    background-color: #00ff90;
-    color: #121212;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-form button:hover {
+.purchase:hover {
     background-color: #00cc73;
     transform: scale(1.05);
 }
@@ -123,5 +109,4 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
-    margin-top: 40px;
 }
