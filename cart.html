@@ -20,10 +20,15 @@
         </nav>
     </header>
     <main>
-        <p>Your selected items will appear here.</p>
-        <div id="cart-items">
-
-        </div>
+        <ul id="products">
+            <li data-productid="1">Product 1 <button class="add-to-cart">Add to Cart</button></li>
+            <li data-productid="2">Product 2 <button class="add-to-cart">Add to Cart</button></li>
+            <li data-productid="3">Product 3 <button class="add-to-cart">Add to Cart</button></li>
+        </ul>
+        
+        <ul id="cart">
+            <!-- Cart items will be added here dynamically -->
+        </ul>
         <button id="checkout-button">Proceed to Checkout</button>
     </main>
     <footer>

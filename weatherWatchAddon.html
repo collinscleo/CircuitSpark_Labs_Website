@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="Clock.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="weatherWatchAddon.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
@@ -22,32 +22,35 @@
 
     <main>
         <div class="titlecard">
-            <h1>Build Your Own Clock Kit</h1>
+            <h1>Weather Watch addon for the clock kit</h1>
         </div>
         <div class="product-container">
             <img src="clock.png" alt="Clock Kit" class="kit-image">
             <div class="description">
                 <h2>Product Description</h2>
-                <p>Learn the basics of timekeeping, circuits, and digital displays with this all-in-one DIY clock kit. 
-                    Designed for beginners and hobbyists alike, this kit includes everything you need to build a 
-                    fully functional digital clock while developing real-world electronics skills. 
-                    Whether it’s your first project or your tenth, it’s the perfect way to start building with confidence.
+                <p>Take your clock to the next level with the Weather Watch add-on — a sensor module that measures both 
+                    temperature and humidity. It’s perfect for anyone interested in environmental data and adds a functional, 
+                    educational twist to your original build.
                 </p>
                 <strong class="stronk">Features:</strong>
                 <div class="features">
                     <ul>
-                        <li>Digital clock with real-time display</li>
-                        <li>Easy-to-follow step-by-step instructions</li>
-                        <li>Beginner-friendly and educational</li>
-                        <li>Microcontroller-based for expandability</li>
-                        <li>Compatible with all clock add-ons</li>
-                        <li>USB or battery-powered options</li>
-                        <li>Includes all necessary components and tools</li>
+                        <li>Measures both temperature and humidity</li>
+                        <li>DHT11 sensor module for accurate readings</li>
+                        <li>Live environmental data display</li>
+                        <li>Plug-and-play setup with Clock Kit</li>
+                        <li>Great introduction to IoT and sensors</li>
+                        <li>Compact, reliable design</li>
                     </ul>                    
                 </div>
                 <a class="purchase" href="cartpage.html">Buy Now!</a>
             </div>
         </div>
+
+        <h2>Your Cart</h2>
+        <ul id="cart">
+            <!-- Cart items will be added here -->
+        </ul>
     </main>
 
     <footer>
