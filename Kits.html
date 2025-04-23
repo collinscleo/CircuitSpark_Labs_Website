@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CircuitSpark Labs - Kits</title>
     <link rel="stylesheet" href="Kits.css">
+    <script src="search.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">CircuitSpark Crates</div>
+        <input type="text" id="myInput" onkeyup="search()" placeholder="Search..">
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
@@ -21,30 +23,27 @@
     </header>
     <main>
         <section>
-            <h2>Explore Our Kits</h2>
-            <p>At CircuitSpark Labs, we believe in the power of hands-on learning to ignite curiosity and foster creativity. 
-                Our growing line of build-it-yourself tech kits is designed for all ages and skill levels, 
-                making it easy and exciting to explore the world of electronics through real, engaging projects.</p>
+            <h2 id="kitTitle">Explore Our Kits</h2>
+            <p id="aboutKits">At CircuitSpark Labs, our products are built to inspire curiosity through hands-on exploration.
+                From clocks to sensors and beyond, each kit is carefully designed to teach real electronic skills in a fun 
+                and approachable way. With add-ons like Weather Watch and Temperature Tracker, users can customize and expand 
+                their builds as they learn. Whether you're a beginner or a budding engineer, our kits offer an exciting path 
+                into the world of tech and innovation.</p>
 
             <section id="kits">
-                <h2>Build-Your-Own Kits</h2>
+                <h2 id="productTitle">All Products</h2>
                 <div class="kits-container">
+
                     <div class="kit-card">
                         <a href="clock.html">
                             <h3>Build your own clock kit</h3>
                             <img src="Placeholder.jpg" alt="Clock Kit" width="100%" height="auto">
                             <p>Build your own fully functional digital clock while learning the fundamentals of circuits, 
                                 programming, and digital displays. It’s the perfect starting point for anyone curious about 
-                                how everyday electronics work.</p>
+                                how everyday electronics work.
+                            </p>
                         </a>
                     </div>
-                    <!-- Add more kit cards as needed -->
-                </div>
-            </section>
-
-            <section id="kits">
-                <h2>Development Kits</h2>
-                <div class="kits-container">
 
                     <div class="kit-card">
                         <a href="clock.html">
@@ -57,29 +56,76 @@
                     </div>
 
                     <div class="kit-card">
-                    <a href="clock.html">
-                        <h3>Temperature Tracker addon for the clock kit</h3>
-                        <img src="Placeholder.jpg" alt="Clock Kit" width="100%" height="auto">
-                        <p>This add-on equips your clock with real-time temperature and humidity sensors. 
-                            Watch your project evolve as it collects and displays live environmental data.</p>
-                    </a>
-                </div>
+                        <a href="clock.html">
+                            <h3>Temperature Tracker addon for the clock kit</h3>
+                            <img src="Placeholder.jpg" alt="Clock Kit" width="100%" height="auto">
+                            <p>This add-on equips your clock with real-time temperature and humidity sensors. 
+                                Watch your project evolve as it collects and displays live environmental data.</p>
+                        </a>
+                    </div>
 
-                <div class="kit-card">
-                    <a href="clock.html">
-                        <h3>Alarm addon for the clock kit</h3>
-                        <img src="Placeholder.jpg" alt="Clock Kit" width="100%" height="auto">
-                        <p>Add an alarm and custom reminder feature to your clock with this simple yet powerful add-on. 
-                            Set daily alarms, hourly chimes, or even programmable reminders to stay on track 
-                            — all controlled through simple buttons.</p>
-                    </a>
-                </div>
-
-                </div>
-                    <!-- Add more kit cards as needed -->
+                    <div class="kit-card">
+                        <a href="clock.html">
+                            <h3>Alarm addon for the clock kit</h3>
+                            <img src="Placeholder.jpg" alt="Clock Kit" width="100%" height="auto">
+                            <p>Add an alarm and custom reminder feature to your clock with this simple yet powerful add-on. 
+                                Set daily alarms, hourly chimes, or even programmable reminders to stay on track 
+                                — all controlled through simple buttons.</p>
+                        </a>
+                    </div>
                 </div>
             </section>
 
+        </section>
+
+        <h2 class="aboutKitsTitle"><b>Why Choose Our Kits?</b></h2>
+
+        <section id="aboutKits">
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Educational by Design</h3>
+                <p class="aboutKitParagraph">Our kits are not just toys; they are educational tools that teach you the fundamentals of electronics, coding, 
+                    and problem-solving. Each kit comes with easy-to-follow instructions 
+                    and online resources to guide you through the building process.
+                </p>
+            </section>
+
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Beginner-Friendly & Age Inclusive</h3>
+                <p class="aboutKitParagraph">We believe electronics should be fun and approachable for everyone. That’s why our kits are designed with 
+                    all skill levels in mind — with age-appropriate kits for kids, teens, and adults alike. No prior experience?
+                     No problem.
+                </p>
+            </section>
+
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Modular & Expandable</h3>
+                <p class="aboutKitParagraph">Unlike one-off kits that end when the build is done, our kits are made to grow. Add-ons like the 
+                    Weather Watch or Temperature Tracker plug right into our base kits, giving users more ways to experiment, 
+                    learn, and customize.
+                </p>
+            </section>
+
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Designed by Real Makers</h3>
+                <p class="aboutKitParagraph">Our products are built by students who understand what real learners need. We test every kit, every add-on, 
+                    and every instruction guide ourselves — ensuring they’re fun, functional, and frustration-free.
+                </p>
+            </section>
+
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Complete Kits — No Guesswork</h3>
+                <p class="aboutKitParagraph">Each kit includes everything you need to get started: components, tools (when required), instructions, 
+                    and support. No hidden extras or hard-to-find parts.
+                </p>
+            </section>
+
+            <section class="aboutKitsSection">
+                <h3 class="aboutKitsTitles">Support You Can Trust</h3>
+                <p class="aboutKitParagraph">We’re not a faceless tech company — we’re a team of real people who care about your experience. 
+                    Need help with a step or want to learn more? We offer direct customer support and detailed digital guides 
+                    to keep your build on track.
+                </p>
+            </section>
         </section>
         
     </main>

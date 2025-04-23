@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="Home.css">
         <script src="Home.js"></script>
         <script src="Cart.js"></script>
+        <script src="search.js"></script>
     </head>
     <body>
         <header>
@@ -16,10 +17,10 @@
             <input type="text" id="myInput" onkeyup="search()" placeholder="Search..">
             
             <ul id="myUL">
-                <li style="display:none;"><a href="#">Build your own clock kit</a></li>
-                <li style="display:none;"><a href="#">Weather Watch addon for the clock kit</a></li>
-                <li style="display:none;"><a href="#">Temperature Tracker addon for the clock kit</a></li>
-                <li style="display:none;"><a href="#">Alarm addon for the clock kit</a></li>
+                <li style="display:none;"><a href="clock.html">Build your own clock kit</a></li>
+                <li style="display:none;"><a href="weatherWatchAddon.html">Weather Watch addon for the clock kit</a></li>
+                <li style="display:none;"><a href="temperatureTrackerAddon.html">Temperature Tracker addon for the clock kit</a></li>
+                <li style="display:none;"><a href="alarmAddon.html">Alarm addon for the clock kit</a></li>
             </ul>
             
             <nav>
@@ -123,35 +124,37 @@
             <section id="footerHeaders">
                 <span class="legalShit">&copy; 2025 CircuitSpark Crates. All rights reserved.</span>
             </section>
+
+            <section id="footerLinks">
+                <section id="Links">
+                    <h3 class="footerHeader">Navigation</h3>
+                    <ul class="footerLinks">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Kits.html">Our Kits</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </section>
+                
+                <section id="Links">
+                    <h3 class="footerHeader">Products</h3>
+                    <ul class="footerLinks">
+                        <li><a href="clock.html">Build your own clock kit</a></li>
+                        <li><a href="clock.html">Weather Watch addon for the clock kit</a></li>
+                        <li><a href="clock.html">Temperature Tracker addon for the clock kit</a></li>
+                        <li><a href="clock.html">Alarm addon for the clock kit</a></li>
+                    </ul>
+                </section>         
         
-            <section id="navLinks">
-                <h3 class="footerHeader">Navigation</h3>
-                <ul class="footerLinks">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Kits.html">Our Kits</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                </ul>
-            </section>
-            
-            <section id="productLinks">
-                <h3 class="footerHeader">Products</h3>
-                <ul class="footerLinks">
-                    <li><a href="clock.html">Build your own clock kit</a></li>
-                    <li><a href="clock.html">Weather Watch addon for the clock kit</a></li>
-                    <li><a href="clock.html">Temperature Tracker addon for the clock kit</a></li>
-                    <li><a href="clock.html">Alarm addon for the clock kit</a></li>
-                </ul>
-            </section>
-        
-            <section id="legalLinks">
-                <h3 class="footerHeader">Legal</h3>
-                <ul class="footerLinks">
-                    <li><a href="terms.html">Terms of Service</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="shipping.html">Shipping Policy</a></li>
-                </ul>
+                <section id="Links">
+                    <h3 class="footerHeader">Legal</h3>
+                    <ul class="footerLinks">
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                    </ul>
+                </section>
             </section>
         </footer>
     </body>

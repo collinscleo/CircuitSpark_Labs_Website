@@ -18,27 +18,14 @@ header {
     padding: 20px;
     background-color: #1e1e1e;
 }
+.Headers {
+    font-size: 250%;
+}
 
 header .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #00ff90;
-}
-
-#productTitle {
-    margin-top: 3%;
-}
-
-.aboutKitsTitle {
-    margin-top: 3%;
-}
-
-a:link {
-    color: var(--text-color);
-}
-a:visited {
-    color: var(--primary-color);
-    outline: none;
 }
 a {
     color: var(--text-color);
@@ -93,12 +80,16 @@ header nav a:hover {
     display: block; /* Make it into a block element to fill the whole list */
   }
   
-  #myUL li a:hover:not(.header) {
+#myUL li a:hover:not(.header) {
     background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
+}
 
 main {
     padding: 40px 20px;
+}
+
+.kit-card:hover .kit-title {
+    color: #00ff90;
 }
 
 h1, h2 {
@@ -106,77 +97,66 @@ h1, h2 {
     color: #fff;
 }
 
-.cta-btn {
-    background-color: #00ff90;
-    color: #121212;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #00cc73;
-    transform: scale(1.05);
-}
-
-#aboutKits {
+#about {
+    margin-top: 5%;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.kits-container {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.kit-card {
-    background-color: #1c1c1c;
-    font-family: 'Roboto', sans-serif;
-    color: #f4f4f4;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
+.aboutParagraph {
     text-align: center;
-    transition: transform 0.3s ease;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.kit-card:hover {
-    transform: translateY(-10px);
+#laurence {
+    margin-right: 70%;
 }
 
-.aboutKitsSection1 {
-    text-align: center;
-    width: 50%;
-}
-
-.aboutKitsSection {
-    font-family: 'Roboto', sans-serif;
-    width: 25%;
-    margin-bottom: 3%;
-    margin-left: 2%;
-    margin-right: 2%
-}
-
-.aboutKitParagraph {
-    margin-top: 3%;
-}
-
-#aboutKits {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+#laurenceParagraph {
+    margin-right: 25%;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
-    margin-top: 40px;
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+}
+
+#footerHeaders {
+    margin-bottom: 20px; /* Space below the legal text */
+    text-align: center; /* Center the legal text */
+}
+
+.footerContent {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out sections evenly */
+}
+
+.Links {
+    font-family: 'Roboto', sans-serif;
+    width: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+}
+
+#footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footerLinks li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footerLinks a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footerLinks a:hover {
+    color: #00ff90; /* Change color on hover */
 }

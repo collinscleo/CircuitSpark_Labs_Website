@@ -157,20 +157,22 @@ video {
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 0; 
+    left: 0;
+    right: 0; 
     width: auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: left;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 main {
     padding: 40px 20px;
 }
 
-.kit-title:hover {
+.kit-card:hover .kit-title {
     color: #00ff90;
 }
 
@@ -244,15 +246,18 @@ footer {
     justify-content: space-between; /* Space out sections evenly */
 }
 
-.footerHeader {
-    font-size: 1.2em; /* Larger font for headers */
-    margin: 10px 0; /* Margin above and below headers */
+.Links {
+    font-family: 'Roboto', sans-serif;
+    width: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
 }
 
-.footerLinks {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+#footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .footerLinks li {

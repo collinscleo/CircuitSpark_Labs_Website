@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="temperatureTrackerAddon.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="temperatureTrackerAddon.css">
+    <script src="search.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">CircuitSpark Crates</div>
+        <input type="text" id="myInput" onkeyup="search()" placeholder="Search..">
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
@@ -21,9 +23,7 @@
     </header>
 
     <main>
-        <div class="titlecard">
-            <h1>Temperature Tracker addon for the clock kit</h1>
-        </div>
+            <h1 id="Title">Temperature Tracker addon for the clock kit</h1>
         <div class="product-container">
             <img src="clock.png" alt="Clock Kit" class="kit-image">
             <div class="description">
@@ -32,7 +32,7 @@
                     This sensor module displays accurate indoor temperatures in real time, making your build smarter 
                     and more interactive while introducing you to sensor-based tech.
                 </p>
-                <strong class="stronk">Features:</strong>
+                <h3  id="Feat"><strong>Features:</strong></h2>
                 <div class="features">
                     <ul>
                         <li>Displays current indoor temperature</li>
