@@ -51,11 +51,11 @@ header nav a:hover {
 }
 
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 25%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 25%;
+    font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
@@ -63,25 +63,24 @@ header nav a:hover {
 }
   
   #myUL {
-    /* Remove default list styling */
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
   #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
   }
   
 #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+    background-color: #eee;
 }
 
 main {
@@ -95,13 +94,6 @@ main {
 h1, h2 {
     text-align: center;
     color: #fff;
-}
-
-#about {
-    margin-top: 5%;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .aboutParagraph {
@@ -118,20 +110,28 @@ h1, h2 {
     margin-right: 25%;
 }
 
+#cleo {
+    margin-left: 70%;
+}
+
+#cleoParagraph {
+    margin-left: 25%;
+}
+
 footer {
-    background-color: #333; /* Dark background for the footer */
-    color: white; /* White text color */
-    padding: 20px; /* Padding around the footer */
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
 
 #footerHeaders {
-    margin-bottom: 20px; /* Space below the legal text */
-    text-align: center; /* Center the legal text */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footerContent {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space out sections evenly */
+    display: flex;
+    justify-content: space-between;
 }
 
 .Links {
@@ -149,14 +149,14 @@ footer {
 }
 
 .footerLinks li {
-    margin: 5px 0; /* Space between links */
+    margin: 5px 0;
 }
 
 .footerLinks a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline from links */
+    color: white;
+    text-decoration: none;
 }
 
 .footerLinks a:hover {
-    color: #00ff90; /* Change color on hover */
+    color: #00ff90;
 }

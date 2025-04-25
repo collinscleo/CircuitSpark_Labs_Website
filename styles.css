@@ -230,25 +230,6 @@ h1, h2 {
     margin-right: 5%;
 }
 
-#learnMore {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #00ff90;
-    border: none;
-    color: black;
-    margin-top: 2%;
-    transform: scale(1.125);
-    border-radius: 5px;
-}
-
-#learnMore:hover {
-    transform: scale(1.25);
-    background-color: #00cc73;
-    cursor: pointer;
-}
-
 footer {
     background-color: #333; /* Dark background for the footer */
     color: white; /* White text color */
